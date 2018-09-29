@@ -2,11 +2,17 @@
 
 int main()
 {
-	string previous = " "; // previous word; initialized to “not a word”
-	string current; // current word
-	while (cin >> current) { // read a stream of words
-		if (previous == current) // check if the word is the same as last
-			cout << "repeated word: " << current << '\n';
-		previous = current;
-	}
+	int x = 100;
+	cout << x << endl;
+	int y = 3;
+	cout << y << endl;
+	int z = x % y;
+	cout << z << endl;
+	int i = 100;
+	cout << i << endl;
+	i %= y;
+	cout << i << endl;
+	
+	system("pause");
+	return 0;
 }
