@@ -4,15 +4,24 @@
 
 int main()
 {
-	for (int i = 0; i < 100; ++i) { // for i in the [0:100) range
-		cout << i << '\t' << square(i) << '\n';
-		//++i; // what's going on here? It smells like an error!
+	vector<int> fVector = {1,2,3,4,5,6,7,8,9,10};
+	for(int i = 0; i < fVector.size(); ++i)
+	{
+		cout << fVector[i] << endl;
 	}
-	
-	double x = 72362;
-	double y = SqrtNumber(x);
-	cout << y << endl << square(y) << endl;
 
+	vector<string> sVector = { "Bill","Nye","The","Science","Guy" };
+	for (int i = 0; i < sVector.size(); ++i)
+	{
+		cout << sVector[i] << endl;
+	}
+
+	vector<int> tVector(3);
+	for (int i = 0; i < 3; ++i)
+	{
+		tVector[i] = i;
+		cout << tVector[i] << endl;
+	}
 
 	system("pause");
 	return 0;
