@@ -252,4 +252,6 @@ Iterator<C> find_if(C& c, Pred p)
 	return std::find_if(c.begin(), c.end(), p);
 }
 
+double square(double x) { return pow(x, 2); }
+
 #endif //H112
