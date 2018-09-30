@@ -4,32 +4,19 @@
 
 int main()
 {
-	int i = 1;
-	constexpr int x = 1000;
-	MSG msg = { 0 };
-	for (int z = 101; z != 0; ++z)
+	vector<int> x = { 1,2,3,4,5 };
+	for (int i = 1; i < 25000; ++i) 
 	{
-		if (i = (1000 + (z - 100) - x))
-		{
-			RegisterHotKey(NULL, 1, MOD_NOREPEAT, VK_F9);
-			cout << i << endl;
-		}
-		if (GetMessage(&msg, NULL, 0, 0) != 0)
-		{
-			UnregisterHotKey(NULL, 1);
-			if (i != (1000 + (z - 100) - x))
-			{
-				RegisterHotKey(NULL, 2, MOD_NOREPEAT, VK_F10);
-				do
-				{
-					cout << "Error: Value Modified. Press F10 To Unmodify." << endl;
-					if (GetMessage(&msg, NULL, 0, 0) != 0)
-						i = (1000 + (z - 100) - x); UnregisterHotKey(NULL, 2); break;
-				} while (true);
-			}
-			++i; 
-		}
+		cout << x[i - 1] << endl;
+		x.push_back(x[i - 1] + 5);
 	}
 
+	for (int i = 0; i < 25000; ++i)
+	{
+		cout << "Random Vector Number " << i << ": " << x[i] << endl;
+		Sleep(100);
+	}
+
+	system("pause");
 	return 0;
 }
