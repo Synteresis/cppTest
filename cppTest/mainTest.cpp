@@ -23,6 +23,27 @@ int main()
 		cout << tVector[i] << endl;
 	}
 
+	cout << endl;
+
+	vector<int> v = { 5, 7, 9, 4, 6, 8 };
+	for (int x : v) // for each x in v
+		cout << x << '\n';
+
+	cout << endl;
+
+	int z[] = { 1, 2, 3, 4, 5, 6, 7 };
+	for (int x : z)
+		cout << z << endl;
+
+	/*
+	vector<int> f2Vector;
+	for (int i = 0; i < 100; ++i)
+	{
+		f2Vector[i] = i;
+		cout << f2Vector[i] << endl;
+	}
+	*/
+
 	system("pause");
 	return 0;
 }
